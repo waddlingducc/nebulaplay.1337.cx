@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Logo container to prevent overlap */
+        .logo-container {
+            position: absolute;
+            top: 15px; /* Adjusted to prevent overlap */
+            left: 15px;
+            z-index: 10; /* Ensures it stays above the iframe */
+        }
+
+        /* Adjusted logo size */
+        .logo {
+            width: 100px; /* Larger size */
+            height: auto;
+        }
+
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo container to prevent overlap -->
+    <div class="logo-container">
+        <a href="https://nebulaplay.site">
+            <img src="https://i.ibb.co/prXCv58D/jhndas9udsa78d.png" alt="Logo" class="logo">
+        </a>
+    </div>
+
+    <iframe src="https://mess.eu.org/1.8.8/">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+
+</body>
+</html>
