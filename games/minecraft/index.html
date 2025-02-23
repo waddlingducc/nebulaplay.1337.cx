@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1v1.lol</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://i.ibb.co/4ZMGnKmk/rgtrg455555.png); /* Background for the page */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Navigation bar with logo */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            top: 20px; /* Adjust the distance from the top */
+            left: 50%;
+            transform: translateX(-50%); /* Centers the logo horizontally */
+            z-index: 10;
+        }
+
+        /* Logo styling (smaller version) */
+        nav img {
+            width: 50px; /* Smaller size for the logo */
+            height: auto;
+        }
+
+        /* Game container for iframe */
+        .game-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar with the game logo -->
+    <nav>
+        <a href="https://nebulaplay.site/" target="_blank">
+            <img src="https://i.ibb.co/wNQhpbZL/9sadas89d.png" alt="NebulaPlay">
+        </a>
+    </nav>
+
+    <!-- Fullscreen iframe for the game -->
+    <div class="game-container">
+        <iframe src="https://mess.eu.org/1.8.8/">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
+    </div>
+
+</body>
+</html>

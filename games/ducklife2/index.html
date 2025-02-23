@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2366308143645027" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Life 2</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <script src="https://xxsibxx.github.io/ruffleembedsetup112/ruffle/ruffle.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://i.ibb.co/4ZMGnKmk/rgtrg455555.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80%;
+        }
+        .ad-banner {
+            width: 160px;
+            height: 600px;
+            margin-top: 110px;
+            position: relative;
+            z-index: 10; /* Ensures ads are on top */
+            pointer-events: auto; /* Allows clicking */
+        }
+        .game-container {
+            width: 100%;
+            max-width: 1000px;
+            height: 85%;
+            margin-top: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swf-container {
+            position: relative; /* Prevents absolute overlap */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        embed {
+            width: 100%;
+            height: 100%;
+        }
+        .bottom-ad {
+            width: 970px;
+            height: 90px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://nebulaplay.site">
+            <img src="https://i.ibb.co/RTKMMcY7/irytyui.png" alt="logo">
+        </a>
+        <h1>NebulaPlay</h1>
+    </nav>
+
+    <div class="container">
+        <iframe class="ad-banner" data-aa='2382276' src='//ad.a-ads.com/2382276?size=160x600' style='border:0; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+        
+        <div class="game-container">
+            <div class="swf-container">
+                <embed id="gameEmbed" src="https://selenite-cc.github.io/flasharchive/Duck%20Life%202%20-%20World%20Champion.swf" type="application/x-shockwave-flash"></embed>
+            </div>
+        </div>
+        
+        <iframe class="ad-banner" data-aa='2382276' src='//ad.a-ads.com/2382276?size=160x600' style='border:0; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+    </div>
+
+    <iframe class="bottom-ad" data-aa='2381738' src='//ad.a-ads.com/2381738?size=970x90' style='border:0; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+    
+    <script>
+        function resizeGame() {
+            let embed = document.getElementById('gameEmbed');
+            let container = document.querySelector('.game-container');
+            let containerWidth = container.offsetWidth;
+            let containerHeight = container.offsetHeight;
+            let gameAspectRatio = 1000 / 600; // Original game aspect ratio
+
+            let newWidth, newHeight;
+
+            if (containerWidth / containerHeight > gameAspectRatio) {
+                newHeight = containerHeight;
+                newWidth = newHeight * gameAspectRatio;
+            } else {
+                newWidth = containerWidth;
+                newHeight = newWidth / gameAspectRatio;
+            }
+
+            embed.style.width = `${newWidth}px`;
+            embed.style.height = `${newHeight}px`;
+        }
+
+        window.addEventListener('resize', resizeGame);
+        window.onload = resizeGame;
+    </script>
+
+    <!-- Alternative: Uncomment if the iframe still doesn't work -->
+    <!-- <script async src="//ad.a-ads.com/2382276.js"></script> -->
+
+</body>
+</html>
